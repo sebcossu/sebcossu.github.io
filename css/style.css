@@ -3,7 +3,14 @@ body {
     margin: 0;
     padding: 0;
 }
-header, footer {
+header {
+    background: url('../img/simcitylondon.jpeg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    height: 150px; /* Same height as the image */
+}
+footer {
     background-color: #333;
     color: white;
     text-align: center;
@@ -41,10 +48,11 @@ header, footer {
     align-items: flex-start;
     width: 450px; /* 3 times the width of the picture */
     margin: 1em;
+    height: 300px; /* Increased height */
 }
 .publications .project img {
-    width: 150px;
-    height: 200px;
+    width: auto;
+    height: 100%; /* Adapt to the height of the div */
     object-fit: cover;
     margin-right: 1em;
 }
