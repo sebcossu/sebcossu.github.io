@@ -39,14 +39,16 @@ header, footer {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    width: 450px; /* 3 times the width of the picture */
+    width: auto;
+    height: auto;
     margin: 1em;
-    height: 300px; /* Increased height */
 }
 .publications .project img {
     width: auto;
-    height: 100%; /* Adapt to the height of the div */
-    object-fit: cover;
+    height: auto;
+    max-width: 150px;
+    max-height: 100%;
+    object-fit: contain;
     margin-right: 1em;
 }
 .publications .project .details {
